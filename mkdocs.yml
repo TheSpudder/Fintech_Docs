@@ -49,6 +49,7 @@ nav:
   - Code Docs:
     - Java: coding/javafile.md
   - About: 
+    - Current Projects: about/projects.md
     - About Me: about/about.md
     - Childhood: about/childhood.md
   - Tags: tags.md
