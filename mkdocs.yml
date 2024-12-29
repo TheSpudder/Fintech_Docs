@@ -1,7 +1,11 @@
-site_name: My Docs
+site_name: Fintech Club Documentation
 site_url: https://mydomain.org/mysite
 theme:
   name: material
+  logo: assets/ROUNDED_ICON.png
+  favicon: assets/ROUNDED_ICON.png
+  font:
+    text: Poppins
   palette: 
 
     # Palette toggle for light mode
@@ -19,7 +23,7 @@ theme:
     - navigation.instant
     - navigation.instant.progress
     - navigation.tracking
-    - navigation.tabs
+    #- navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
@@ -28,7 +32,19 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
+    - navigation.path
+    - navigation.footer
 
+copyright: Copyright &copy; 2024 - 2025 UB Fintech Club Material
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord 
+      link: https://discord.gg/TEZqRNvfwn
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/ub_fintech
+    - icon: fontawesome/brands/slack
+      link: https://buffalo.campuslabs.com/engage/organization/fintech
 plugins:
   - search
   - tags:
