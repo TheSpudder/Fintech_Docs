@@ -1,0 +1,63 @@
+[data-md-color-scheme="beige"] {
+  /* Primary Colors (Navbar, UI Elements) */
+  --md-primary-fg-color:        #F5F5DC; /* Beige */
+  --md-primary-fg-color--light: #FAF7E3; /* Light Beige */
+  --md-primary-fg-color--dark:  #E0D9C5; /* Dark Beige */
+
+  /* Background Colors */
+  --md-default-bg-color:        #D8D2BA; /* Darker beige for page background */
+  --md-code-bg-color:           #D0C9B0; /* Code block background */
+  --md-footer-bg-color:         #CFC7A8; /* Footer background */
+
+  /* Text Colors */
+  --md-default-fg-color:        #3E3E3E; /* Default text color */
+  --md-default-fg-color--light: #4E4E4E; /* Slightly lighter text for sub-elements */
+  --md-typeset-color:           #3E3E3E; /* Ensure text is always visible */
+  --md-typeset-a-color:         #8B4513; /* Links (Brown accent) */
+  --md-typeset-a-color--hover:  #654321; /* Link hover color */
+
+  /* Header Colors */
+  --md-header-bg-color:         #CFC7A8; /* Header background */
+  --md-header-fg-color:         #3E3E3E; /* Header text color */
+
+  /* Sidebar Colors */
+  --md-sidebar-bg-color:        #EAE2CF; /* Sidebar background */
+  --md-sidebar-fg-color:        #3E3E3E; /* Sidebar text color */
+  --md-sidebar-nav-fg-color:    #8B4513; /* Sidebar link color */
+  --md-sidebar-nav-hover-bg:    #D0C9B0; /* Sidebar link hover */
+
+  /* Code Syntax Highlighting */
+  --md-code-fg-color:           #3E3E3E; /* Code text color */
+  --md-code-hl-number-color:    #8B4513; /* Number highlight */
+  --md-code-hl-string-color:    #654321; /* String highlight */
+
+  /* Footer */
+  --md-footer-fg-color:         #3E3E3E; /* Footer text color */
+
+  /* Explicit Text Color for Body */
+  color: #3E3E3E;
+}
+
+/* Ensure specific problematic text elements inherit the correct color */
+[data-md-color-scheme="beige"] body,
+[data-md-color-scheme="beige"] h1,
+[data-md-color-scheme="beige"] h2,
+[data-md-color-scheme="beige"] h3,
+[data-md-color-scheme="beige"] h4,
+[data-md-color-scheme="beige"] h5,
+[data-md-color-scheme="beige"] h6,
+[data-md-color-scheme="beige"] p,
+[data-md-color-scheme="beige"] li,
+[data-md-color-scheme="beige"] span,
+[data-md-color-scheme="beige"] a {
+  color: #3E3E3E !important;
+}
+
+/* Scrollbar Customization */
+[data-md-color-scheme="beige"] ::-webkit-scrollbar-thumb {
+  background-color: #8B4513;
+}
+[data-md-color-scheme="beige"] ::-webkit-scrollbar {
+  background-color: #EAE2CF;
+}
+

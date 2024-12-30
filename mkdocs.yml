@@ -4,27 +4,33 @@ theme:
   name: material
   logo: assets/ROUNDED_ICON.png
   favicon: assets/ROUNDED_ICON.png
+  icon:
+    admonition:
+      note: octicons/tag-16
+      info: material/information-outline
+      warning: material/alert
+      danger: material/alert-circle
+      tip: material/fire
   font:
-    text: Poppins
+    text: Inter
   palette: 
-
-    # Palette toggle for light mode
-    - scheme: default
-      toggle:
-        icon: material/brightness-7 
-        name: Switch to dark mode
-
     # Palette toggle for dark mode
     - scheme: slate
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+    # Palette toggle for light mode
+    - scheme: beige
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
   features:
     - navigation.instant
     - navigation.instant.progress
     - navigation.tracking
     #- navigation.tabs
-    - navigation.tabs.sticky
+    #- navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - toc.integrate
@@ -51,23 +57,41 @@ plugins:
       tags_file: tags.md
   - blog
 
+extra_css:
+  - stylesheets/extra.css
+
 markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 nav:
   - Home: index.md
-  - Code Docs:
-    - Java: coding/javafile.md
-  - About: 
+  - Introduction to Financial Technology:
+    - A Bit Of History: introduction_fintech/a_bit_of_history.md
+  - Solidity Programming: 
     - Current Projects: about/projects.md
     - About Me: about/about.md
     - Childhood: about/childhood.md
-  - Tags: tags.md
-  - Blog: 
+  - Creating Decentralized Applications:
+    - Current Projects: about/projects.md
+  - Current News: 
     - blog/index.md
+  - Tags: tags.md
