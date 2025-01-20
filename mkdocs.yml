@@ -86,6 +86,7 @@ nav:
   - Home: index.md
   - Introduction to Financial Technology:
     - A Bit Of History: introduction_fintech/a_bit_of_history.md
+    - Core Components: introduction_fintech/core_components.md
   - Solidity Programming: 
     - Current Projects: about/projects.md
     - About Me: about/about.md
